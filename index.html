@@ -1,0 +1,259 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>extra-math</title>
+	<meta name="description" content="Documentation for extra-math">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">extra-math</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>extra-math</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p>Mathematics is the classification and study of all possible patterns.
+					This package includes some common statistics functions. <a href="https://en.wikipedia.org/wiki/Walter_Warwick_Sawyer">(1)</a><br>
+					:package: <a href="https://www.npmjs.com/package/extra-math">NPM</a>,
+					:smiley_cat: <a href="https://github.com/orgs/nodef/packages?repo_name=extra-math">GitHub</a>,
+					:running: <a href="https://npm.runkit.com/extra-math">RunKit</a>,
+					:vhs: <a href="https://asciinema.org/a/337174">Asciinema</a>,
+					:moon: <a href="https://www.npmjs.com/package/extra-math.min">Minified</a>,
+					:scroll: <a href="https://unpkg.com/extra-math/">Files</a>,
+					:newspaper: <a href="https://nodef.github.io/extra-math/">JSDoc</a>,
+				:blue_book: <a href="https://github.com/nodef/extra-math/wiki/">Wiki</a>.</p>
+				<blockquote>
+					<p>Stability: Experimental.</p>
+				</blockquote>
+				<br>
+				<pre><code class="language-javascript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">math</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;extra-math&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// import * as math from &quot;extra-math&quot;;</span>
+<span style="color: #008000">// import * as math from &quot;https://unpkg.com/extra-math@1.1.15/index.mjs&quot;; (deno)</span>
+
+<span style="color: #001080">math</span><span style="color: #000000">.</span><span style="color: #795E26">sum</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">4</span><span style="color: #000000">);</span>
+<span style="color: #008000">// 10</span>
+
+<span style="color: #001080">math</span><span style="color: #000000">.</span><span style="color: #795E26">median</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">7</span><span style="color: #000000">, </span><span style="color: #098658">8</span><span style="color: #000000">);</span>
+<span style="color: #008000">// 7</span>
+
+<span style="color: #001080">math</span><span style="color: #000000">.</span><span style="color: #795E26">variance</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">4</span><span style="color: #000000">);</span>
+<span style="color: #008000">// 1.25</span>
+
+<span style="color: #001080">math</span><span style="color: #000000">.</span><span style="color: #795E26">lcm</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">4</span><span style="color: #000000">);</span>
+<span style="color: #008000">// 12</span>
+</code></pre>
+				<br>
+				<br>
+				<a href="#index" id="index" style="color: inherit; text-decoration: none;">
+					<h2>Index</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>Method</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/sum">sum</a></td>
+							<td>Finds sum of numbers (Σ).</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/product">product</a></td>
+							<td>Finds product of numbers (∏).</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/mean">mean</a></td>
+							<td>Finds average of numbers.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/median">median</a></td>
+							<td>Finds the value separating the higher and lower halves of numbers.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/modes">modes</a></td>
+							<td>Finds the values that appear most often.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/range">range</a></td>
+							<td>Finds the difference between the largest and smallest values.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/variance">variance</a></td>
+							<td>Finds the mean of squared deviation of numbers from its mean.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/erf">erf</a></td>
+							<td>Finds error function value of number (approximation).</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/erfc">erfc</a></td>
+							<td>Finds complementary error function value of number (approximation).</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/rem">rem</a></td>
+							<td>Finds remainder of x/y with sign of x (truncated division).</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/mod">mod</a></td>
+							<td>Finds remainder of x/y with sign of y (floored division).</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/modp">modp</a></td>
+							<td>Finds remainder of x/y with +ve sign (euclidean division).</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/gcd">gcd</a></td>
+							<td>Finds greatest common divisor of numbers.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/lcm">lcm</a></td>
+							<td>Finds least common multiple of numbers.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/binomial">binomial</a></td>
+							<td>Finds ways to choose k elements from a set of n elements.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-math/wiki/multinomial">multinomial</a></td>
+							<td>Finds ways to put n objects in m bins (n=sum(ki)).</td>
+						</tr>
+				</tbody></table>
+				<br>
+				<br>
+				<p><a href="https://www.youtube.com/watch?v=dW8Cy6WrO94"><img src="https://img.youtube.com/vi/dW8Cy6WrO94/maxresdefault.jpg" alt=""></a></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function">
+						<a href="modules.html#binomial" class="tsd-kind-icon">binomial</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#degrees" class="tsd-kind-icon">degrees</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#erf" class="tsd-kind-icon">erf</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#erfc" class="tsd-kind-icon">erfc</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#gcd" class="tsd-kind-icon">gcd</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#lcm" class="tsd-kind-icon">lcm</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#mean" class="tsd-kind-icon">mean</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#median" class="tsd-kind-icon">median</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#mod" class="tsd-kind-icon">mod</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#modes" class="tsd-kind-icon">modes</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#modp" class="tsd-kind-icon">modp</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#multinomial" class="tsd-kind-icon">multinomial</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#product" class="tsd-kind-icon">product</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#radians" class="tsd-kind-icon">radians</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#range" class="tsd-kind-icon">range</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#rem" class="tsd-kind-icon">rem</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#sum" class="tsd-kind-icon">sum</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#variance" class="tsd-kind-icon">variance</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
